@@ -19,7 +19,7 @@ const CountryUi = (props) => {
   };
   return (
     <div>
-      <h4>Select Country from below dropdown and get the details:</h4>
+      <h4>Select Country from below dropdown and get the details</h4>
       <form className="dropdown-form" onSubmit={handleSubmit}>
         <label className="form-labels">Select Country:</label>
         <select className="select-opt" onChange={selectHandleChange}>
