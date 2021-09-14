@@ -8,22 +8,19 @@ const CountryUi = (props) => {
     props.countryList();
   }, []);
 
-  const [country, setCountry] = useState();
+  const [country, setCountry] = useState("");
+  const [selectedCountry, setSelectedCountry] = useState("id");
 
   const selectHandleChange = (e) => {
     setCountry(e.target.value);
+    props.countries.map((countryObject) => {
+      if (countryObject.id === country) {
+        console.log(country, "result");
+        setSelectedCountry({ selectedCountry });
+        return country;
+      }
+    });
   };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   // props.countries.map((country) => {
-  //   //   var name;
-  //   //   if (country.name === name) {
-  //   //     setCountry(country);
-  //   //   }
-  //   //   return country;
-  //   // });
-  // };
 
   return (
     <div>
@@ -32,19 +29,11 @@ const CountryUi = (props) => {
         <label className="form-labels">Select Country:</label>
         <select className="select-opt" onChange={selectHandleChange}>
           {props.countries.map((country) => {
-            return <option value={country.name}>{country.name}</option>;
+            return <option value={country.id}>{country.name}</option>;
           })}
         </select>
-        {/* <button
-          type="submit"
-          className="submit-btn"
-          onSubmit={handleSubmit}
-          value="Submit"
-        >
-          Search
-        </button> */}
       </form>
-      <div className="form-labels">Selected Country : {country}</div>
+      <div className="form-labels">Selected:{country}</div>
     </div>
   );
 };
