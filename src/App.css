@@ -27,7 +27,8 @@ tr:nth-child(even) {
 
 h4 {
   margin: auto;
-  text-align: center;
+  text-align: start;
+  padding-bottom: 3%;
   padding-top: 3%;
 }
 .country-table {
@@ -41,7 +42,7 @@ h4 {
   border-radius: 30px;
   border: none;
   background-color: rgb(74, 28, 184);
-  padding: 3px 20px 3px 20px;
+  padding: 3px 20px 5px 20px;
   margin: auto;
   position: relative;
   left: 72%;
@@ -64,4 +65,46 @@ h4 {
 }
 .submit-btn {
   border: none;
+}
+.country-details {
+  margin-top: 30px;
+}
+
+.link-btn {
+  text-decoration: none;
+  color: white;
+}
+.form-field {
+  text-align: start;
+  margin-top: 1%;
+}
+.form-label {
+  display: inline-block;
+  width: 130px;
+  text-align: start;
+}
+.submit-btn {
+  border-radius: 16px;
+  background-color: rgb(26, 88, 221);
+  color: white;
+  padding: 3px 15px 4px 15px;
+  margin-left: 0px;
+}
+
+.back-btn {
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(241, 7, 77);
+  padding: 5px 18px 5px 18px;
+  position: relative;
+  left: 1%;
+  color: white;
+}
+.btn-class {
+  position: relative;
+  left: 13%;
+  margin-top: 20px;
+}
+.input-box {
+  line-height: 20px;
 }

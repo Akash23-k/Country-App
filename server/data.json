@@ -55,6 +55,11 @@
       "flag": "images/india.png",
       "rank": 1,
       "id": 8
+    },
+    {
+      "name": "US",
+      "rank": "9",
+      "id": 9
     }
   ]
 }

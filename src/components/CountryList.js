@@ -13,8 +13,9 @@ const CountryList = (props) => {
     return props.countries.map((country) => {
       return (
         <tr>
-          <td>{country.rank}</td>
+          <td>{country.id}</td>
           <td>{country.name}</td>
+          <td>{country.rank}</td>
         </tr>
       );
     });
@@ -26,6 +27,7 @@ const CountryList = (props) => {
       <table className="country-table">
         <tr>
           <th>Country Id</th>
+          <th>Country Rank</th>
           <th>Country Name</th>
         </tr>
         {renderList()}
@@ -33,6 +35,12 @@ const CountryList = (props) => {
       <button className="country-btn">
         <Link to="/countryui" className="Link">
           Go to Country UI
+        </Link>
+      </button>
+      &nbsp; &nbsp;
+      <button className="country-btn">
+        <Link to="/countryform" className="Link">
+          Add Country
         </Link>
       </button>
     </div>
